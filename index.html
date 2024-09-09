@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twocube</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            background-image: url('bg.png');
+            background-size: cover;
+            background-color: #11161c;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center; /* Center text */
+            position: relative;
+        }
+        .logo {
+            max-width: 300px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .text {
+            font-size: 4em; /* Increased font size */
+            margin-bottom: 20px; /* Space between text and subheading */
+            font-weight: bold; /* Make the text bold */
+        }
+        .subheading { 
+            font-size: 1.5em; /* Subheading font size */
+            margin-bottom: 10px; /* Reduced space between subheading and "Working with" text */
+            max-width: 800px; /* Limit the width of the subheading */
+            line-height: 1.4; /* Improve readability */
+        }
+        .working-with {
+            font-size: 1.2em; /* Smaller than subheading */
+            margin-bottom: 5px; /* Space between "Working with" and images */
+            opacity: 50%;
+
+        }
+        .image-container {
+            display: flex;
+            justify-content: center; /* Center images horizontally */
+            gap: 20px; /* Space between the images */
+            margin-bottom: 30px; /* Space between images and contact button */
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            width: 200px; /* Set a fixed width for the images */
+        }
+        .contact-button {
+            padding: 10px 20px;
+            background-color: #435469; /* Updated button background color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                background-image: url('bg2.png'); /* Mobile-specific background image */
+            }
+            .text {
+                font-size: 3em; /* Adjust font size for mobile */
+            }
+            .subheading {
+                font-size: 1.2em; /* Adjust subheading size for mobile */
+            }
+            .working-with {
+                font-size: 1em; /* Adjust "Working with" size for mobile */
+            }
+            .image-container {
+                flex-direction: column; /* Stack images vertically on mobile */
+                gap: 10px;
+                align-items: center; /* Center align images on mobile */
+            }
+            .image-container img {
+                width: 45%; /* Make images responsive on mobile */
+                max-width: 100%;
+            }
+            .contact-button {
+                font-size: 1em;
+            }
+            .logo {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo_trans.png" alt="Twocube Logo" class="logo">
+        <div class="text">
+            Building the full stack AI for biotech.
+        </div>
+        <div class="subheading">
+            Turning every biologist into a data scientist by enabling the use of natural language to extract insights from data.
+        </div>
+        <div class="working-with">
+            Proudly working with:
+        </div>
+        <div class="image-container">
+            <img src="uci.png" alt="Image 1">
+            <img src="ucla.png" alt="Image 2">
+        </div>
+        <a href="mailto:sai@twocube.ai" class="contact-button">Contact us</a>
+    </div>
+</body>
+</html>
